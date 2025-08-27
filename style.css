@@ -1,0 +1,195 @@
+@charset "UTF-8"; /* Para utilizar palavras com acentos.*/
+
+:root { /* Eu uso a pseudo-classe root para organizar os elementos que vou usar no decorrer da estilização.*/
+  --cor-de-fundo: #000000;
+  --cor-do-navbar: #111111;
+  --fonte-de-texto: system-ui;
+  --cor-principal: #fff;
+  --cor-secundaria: #00ffff;
+  --cor-do-botão: #0dacb8;
+}
+
+body { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-de-texto);
+  background-color: var(--cor-de-fundo);
+}
+
+li, a, button { /* Aqui eu estilizo os links do navbar e o botão do portfólio.*/
+  font-size: 18px;
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+header { /* Configurando o navbar.*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--cor-do-navbar);
+  border: 1px solid var(--cor-secundaria)
+}
+
+.logo { /* Deixando a logo na esquerda da barra de navegação.*/
+  margin-right: auto;
+}
+
+.links-de-navegacao {
+  list-style: none;
+}
+
+.links-de-navegacao li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.links-de-navegacao li:hover { 
+  color: var(--cor-secundaria);
+}
+
+button { /* Botão do navbar.*/
+  padding: 10px 20px;
+  background-color: var(--cor-do-botão);
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover { /* Quando passar o mouse em cima muda a cor para um tom mais escuro.*/
+  background-color: #0dadb89c;
+}
+
+@media (max-width: 823px) { /* Aqui configuro a responsividade da página. Se a página for menor que 823px as letras e botões diminuem.*/
+  li, a, button {
+  font-size: 12px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: auto;
+}
+}
+
+main {
+  color: #fff;
+  font-size: 20px;
+}
+
+.saudação {
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+}
+
+.gradiente-saudação {
+  color: var(--cor-secundaria);
+}
+
+#sobre-mim {
+  color: var(--cor-secundaria);
+  margin-left: 20px;
+}
+
+p { /* Os parágrafos estão justificados e também coloquei uma margem.*/
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nome-do-curso, .links-curso {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.nome-do-curso, a:hover{
+  color: #808080;
+  text-decoration: none;
+  font-style: normal;
+}
+
+#formacao-educacional {
+  color: var(--cor-secundaria);
+  margin-left: 20px;
+}
+
+.anos-escolares {
+  color: var(--cor-secundaria);
+}
+
+.ensino {
+  list-style-type: circle;
+}
+
+#idiomas {
+  color: var(--cor-secundaria);
+  margin-left: 20px;
+}
+
+.idiomas-estilo {
+  color: var(--cor-secundaria);
+}
+
+.idiomas-lista {
+  list-style-type: circle;
+}
+
+.button-projeto {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.divisao-botao-projeto {
+  display: flex;
+  justify-content: center;
+}
+
+.img-projeto {
+  display: block;
+  margin: auto;
+}
+
+.texto-portfolio {
+  color: var(--cor-secundaria);
+  margin-left: 20px;
+  text-align: center;
+}
+
+#contato {
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  margin-left: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+label[for="mensagem"] {
+    display: inline-block;
+    width: 100px;
+}
+
+.linha {
+  border: 1px solid var(--cor-secundaria)
+}
+
+h3 {
+  color: var(--cor-secundaria);
+  font-size: 20px;
+  text-align: center;
+}
+
+h4 {
+  color: var(--cor-secundaria);
+  font-size: 14px;
+  text-align: center;
+}

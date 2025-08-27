@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murillo Sergio - CV pessoal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <span class="logo"> <!-- Aqui eu coloco o meu logotipo -->
+            <img src="images/LOGO 80px.png" alt="logotipo">
+        </span>
+        <nav> <!-- Criando a barra de navegação -->
+            <ul class="links-de-navegacao"> <!-- Aqui eu coloco os links que quando clicados, encaminham para a parte onde se encontra o conteúdo. -->
+                <a href="#inicio">
+                    <li>Início</li>
+                </a>
+                <a href="#sobre-mim">
+                    <li>Sobre mim</li>
+                </a>
+                <a href="#formacao-educacional">
+                    <li>Formação educacional</li>
+                </a>
+                <a href="#idiomas">
+                    <li>Idiomas</li>
+                </a>
+                <a href="#contato">
+                    <li>Contato</li>
+                </a>
+                <a href="#portfolio">
+                    <button>Portfolio</button>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div id="inicio"> <!-- Aqui eu coloco um texto com meu nome e uma saudação -->
+        <h1 class="saudação">Olá, eu sou <span class="gradiente-saudação">Murillo Sergio</span></h1>
+        </div>
+        
+        <h2 id="sobre-mim">Sobre mim</h2> <!-- Criando o sobre mim. Aqui eu falo um pouco sobre meus objetivos de carreira, meus interesses etc. -->
+        <p>Eu sou Murillo Sergio, tenho 18 e estudo <span class="nome-do-curso"><a href="https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-desenvolvimento-de-sistemas/" target="_blank" class="links-curso">Análise e Desenvolvimento de Sistemas</a></span> na <a href="https://uninter.com/" target="_blank" class="links-curso">UNINTER</a>. Desejo me tornar um desenvolvedor full-stack em alguns anos. Atualmente, estou aperfeiçoando meus conhecimentos em back-end.</p>
+        <p>No meu tempo livre gosto de testar meus conhecimentos adquiridos fazendo projetos básicos e experimentais. Além disso, gosto de ler e estudar outras áreas como filosofia, matemática e física.</p>
+        <!-- Criando a área de formação educacional. Aqui estão representados a minhas fases acadêmicas. -->
+        <h2 id="formacao-educacional">Formação Educacional</h2>
+        <ol class="ensino"> <!-- Eu uso lista ordenada pois fica mais organizado. -->
+            <li>Ensino Superior <span class="anos-escolares">2025 - Presente</span> </li>
+            <p>Curso que escolhi para ir em busca dos meus sonhos e objetivos profissionais . Sempre fiquei de olho na área de desenvolvimento de software e agora estou motivado a aprender mais e mais.</p>
+            <li>Ensino Médio <span class="anos-escolares">2022 - 2024</span> </li>
+            <p>Educação básica onde estudei muito e aproveitei muito com meus colegas e amigos.</p>
+        </ol>
+        <h2 id="idiomas">Idiomas</h2> <!-- Criando a parte de idiomas. Aqui eu mostros as línguas que falo. -->
+        <ol class="idiomas-lista">
+            <li>Língua Portuguesa: <span class="idiomas-estilo">Fluente/nativo</span></li>
+            <li>Inglês americano: <span class="idiomas-estilo">A2/B1</span></li>
+        </ol>
+        <div id="portfolio"> <!-- Aqui meus projetos entram em cena. -->
+        <h2 class="texto-portfolio">Portfólio - Projetos</h2>
+        <ol class="lista-de-projetos">
+            <img src="images/aac.png" alt="Aquae Attractio Calculator" class="img-projeto">
+            <h3>Aquae Attractio Calculator</h3>
+            <h4>Calculadora de ingestão de água diária.</h4>
+            <div class="divisao-botao-projeto"> <!-- Botão que leva para o projeto em um repositório no Github. -->
+            <a href="https://github.com/murillosnds/aquae-attractio-calculator/" target="_blank">
+                <button class="button-projeto">Veja</button>
+            </a>
+        </div>
+            <br><br><br> <!-- Quebras de linhas. -->
+            <img src="images/py.png" alt="Aquae Attractio Calculator" class="img-projeto">
+            <h3>Python Playground</h3>
+            <h4>Repositório focado exclusivamente no estudo da linguagem de programação Python.</h4>
+            <div class="divisao-botao-projeto">
+            <a href="https://github.com/murillosnds/python-playground" target="_blank"><button class="button-projeto">Veja</button></a>
+            </div>
+        </ol>
+        </div>
+        <br>
+        <br>
+        <hr class="linha">
+        <section>
+    <h2 id="contato">Entre em Contato</h2> <!-- Aqui é a parte de contato do site. Fiz a interface, porém, para que realmente funcione precisa de um back-end. -->
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <br>
+  <br>
+    </main>
+</body>
+</html>
